@@ -15,3 +15,5 @@ def stripRegex():
         changestr2 = re.compile(b)
         mo = changestr2.sub('', mo)
         print (mo)
+        
+#123abcrunoob311221如果用strip(’12’)处理得到的结果是3abcrunoob3，而用上述代码表达得到的是3abcrunoob311221，显然还是存在一定的缺陷，无法真的完全代替strip()。
