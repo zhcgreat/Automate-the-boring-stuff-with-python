@@ -1,11 +1,11 @@
 #coding=utf-8
 #! python3
 # mcb.pyw - Save and loads pieces of text to the clipboard.
-# Usage: py.exe mcb.pyw save <keyword> - Loads keyword to clipboard.
-# py.exe mcb.pyw <keyword> - Loads keyword to clipboard.
-# py.exe mcb.pyw list - Loads all keywords to clipboard.
-# py.exe mcb.pyw delete <keyword> - Delete keyword from shelf.
-# py.exe mcb,pyw delete_all - Delete all keyword.
+# Usage: py.exe mcb.pyw save <keyword>                            - Loads keyword to clipboard.
+#           py.exe mcb.pyw <keyword>                              - Loads keyword to clipboard.
+#           py.exe mcb.pyw list                                   - Loads all keywords to clipboard.
+#           py.exe mcb.pyw delete <keyword>                       - Delete keyword from shelf.
+#           py.exe mcb,pyw delete_all                             - Delete all keyword.
 import shelve, pyperclip, sys
 mcbShelf = shelve.open('mcb')
 
