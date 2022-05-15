@@ -1,4 +1,3 @@
-#coding=utf-8
 #! python3
 # madlibs.py - Change specific word into another word.
 import re
