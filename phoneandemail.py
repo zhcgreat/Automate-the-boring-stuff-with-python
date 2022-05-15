@@ -1,4 +1,3 @@
-#coding=utf-8
 #! python3
 # phoneandEmail.py - Finds phone numbers and email address
 import pyperclip, re
