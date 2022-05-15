@@ -1,3 +1,5 @@
+#! python3
+
 import re
 checkuppercase = re.compile(r'[A-Z]')
 checklowercase = re.compile(r'[a-z]')
