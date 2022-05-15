@@ -27,7 +27,7 @@ def selectiveDelete(folder):
             absWorkingDir = os.path.abspath(foldername)
             filename = os.path.join(absWorkingDir, filename)
             if os.path.getsize(filename) > 100*1024*1024: #os.path.getsize返回的是字节，需换算
-                #send2trash.send2trash('filename')
+                send2trash.send2trash(filename)
                 print ('\tdeleting %s...' %(filename))
     print ('Done')
 
