@@ -1,0 +1,13 @@
+#! python
+# spreadsheet_to_txt.py
+
+import openpyxl
+wb = openpyxl.load_workbook('Txttosheet.xlsx')
+sheet = wb.active
+for y in range(1,sheet.max_column+1):
+    for x in range(2, sheet.max_row+1):
+        if sheet.cell(x,y).value:
+            filename = sheet.cell(1,y).value
+            content = sheet.cell(x,y).value
+            with open(filename, 'a') as f:
+            f.write(content)
