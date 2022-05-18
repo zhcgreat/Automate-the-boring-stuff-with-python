@@ -1,0 +1,17 @@
+#! python
+# SpreadsheetCellInverter.py - invert the row and column of the cells in the spreadsheet.
+
+import openpyxl
+filename = input('Please enter the filename')
+wb = openpyxl.load_workbook(filename)
+sheet = wb.active
+originData = []
+nwb = openpyxl.Workbook()
+newsheet=nwb.active
+
+for i in range(1, sheet.max_row+1):
+    for j in range(1, sheet.max_column+1):
+        value = sheet.cell(i,j).value
+        newsheet.cell(j,i).value = value
+
+nwb.save('new'+filename)
