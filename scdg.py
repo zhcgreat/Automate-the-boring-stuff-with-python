@@ -1,5 +1,4 @@
-#! python3
-# coding=utf-8
+#! python
 # scdg.py - Choose specific file to copy or delete files and close or insert gap(s)
 # python scdg.py copy                    - Copy specific files to another folder.
 # python scdg.py delete                  - Delete filenames that is bigger than 100M
